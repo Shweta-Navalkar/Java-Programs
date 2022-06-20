@@ -1,4 +1,9 @@
 //This version of code was created by Shweta-Navalkar (github.com)
+
+/*This program takes input from the user in String format
+and after converting to int it checks if the input is a "Prime number" or "not a Prime number"/"Composite".
+Also it repeats until user enters anything except a number.*/
+
 import java.util.*;
 public class PrimeNumber{
 public static void main(String args[]){
