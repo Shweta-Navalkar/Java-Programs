@@ -24,7 +24,7 @@ public static void main(String args[]){
 		if(n==0||n==1){
 			System.out.println(n+" is not Prime nor Composite.");
 			continue;
-			//continue a;
+			//continue a; //(not necessary)
 		}
 		
 		/* On the following line I have written i<n/2 as a condition 
