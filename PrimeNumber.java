@@ -4,14 +4,14 @@ public class PrimeNumber{
 public static void main(String args[]){
 
 	System.out.println("Enter anything except number to EXIT.");
-	//a:
-	for(;;){
+	//a: //for adding lable to continue statement (not necessary)
+	for(;;){   //for an infinite loop can also use while(true){}
 
-		int n,i,rem=0;
+		int n,i,rem=0; //n is number to be checked ,i is temporary variable, rem is remainder
 
 		Scanner sc = new Scanner(System.in);
 		String m = sc.nextLine();
-		//n = sc.nextInt();
+		//n = sc.nextInt(); //for int input (not necessary)
 
 		try{
 			n = Integer.parseInt(m);
@@ -26,7 +26,14 @@ public static void main(String args[]){
 			continue;
 			//continue a;
 		}
-
+		
+		/* On the following line I have written i<n/2 as a condition 
+		here, n can be any number 
+		and any number greater than half of n does not have n in its multiplication table
+		thus n is indivisible by any number greater than half of n. 
+		
+		And the loop starts with i = 2 this is because we already checked n for 0 and 1 previously */
+		
 		for(i=2;i<=n/2;i++){
 			if(n%i==0){
 				rem++;
